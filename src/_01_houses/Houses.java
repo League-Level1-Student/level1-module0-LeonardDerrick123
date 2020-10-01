@@ -61,8 +61,7 @@ public void PointyRoof(String height,Color c) {
 	GuT7.penDown();
 	GuT7.move(h);
 	GuT7.turn(45);
-	
-yyYYYYYYYT7.move(30);
+    GuT7.move(30);
 	GuT7.turn(90);
 	GuT7.move(h);
 	GuT7.turn(-90);
