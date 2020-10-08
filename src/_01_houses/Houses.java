@@ -10,8 +10,9 @@ public class Houses {
 		GuT7.setX(50);
 		GuT7.setSpeed(100);
 		for (int i = 0; i < 3; i++) {
-			flatRoof("small",Color.MAGENTA);
-		flatRoof("medium",Color.CYAN);
+			PointRoof("small",Color.MAGENTA);
+		
+			PointRoof("medium",Color.CYAN);
 		flatRoof("large",Color.YELLOW);
 		}
 	}
@@ -19,12 +20,8 @@ public class Houses {
 	public void flatRoof(String height,Color c ) {
 	int h = 60;
 
-	if (height.equals("small")) {
-		h = 60;
-	}
-	if (height.equals("medium")) {
-		h = 120;
-	}
+	
+	
 	if (height.equals("large")) {
 		h = 250;
 	}
@@ -38,40 +35,39 @@ public class Houses {
 	GuT7.setPenColor(Color.GREEN);
 	GuT7.move(20);
 	GuT7.turn(-90);
-GuT7.setPenColor(Color.BLACK);
-
-	
-	
-	
-	
-	
+GuT7.setPenColor(c);
 	}
-public void PointyRoof(String height,Color c) {
+public void PointRoof(String height,Color c ) {
 	int h = 60;
+
 	if (height.equals("small")) {
 		h = 60;
 	}
 	if (height.equals("medium")) {
 		h = 120;
 	}
-	if (height.equals("large")) {
-		h = 250;
-	}
 	
 	GuT7.penDown();
 	GuT7.move(h);
 	GuT7.turn(45);
-    GuT7.move(30);
+	GuT7.move(30);
 	GuT7.turn(90);
+	GuT7.move(30);
+	GuT7.turn(45);
 	GuT7.move(h);
 	GuT7.turn(-90);
 	GuT7.setPenColor(Color.GREEN);
 	GuT7.move(20);
 	GuT7.turn(-90);
-}
-}
+GuT7.setPenColor(c);
 
-
+	
+	
+	
+	
+	
+	}
+	}
 
 
 
