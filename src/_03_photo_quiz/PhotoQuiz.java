@@ -26,17 +26,17 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-
+String Image = "https://i.imgflip.com/4/2jpjrm.jpg";
 		// 2. create a variable of type "Component" that will hold your image
-
+Component var;
 		// 3. use the "createImage()" method below to initialize your Component
-
+var = createImage(Image);
 		// 4. add the image to the quiz window
-
+quizWindow.add(var);
 		// 5. call the pack() method on the quiz window
-
+quizWindow.pack();
 		// 6. ask a question that relates to the image
-
+JOptionPane.showInputDialog(null,"What meme is this from");
 		// 7. print "CORRECT" if the user gave the right answer
 
 		// 8. print "INCORRECT" if the answer is wrong
