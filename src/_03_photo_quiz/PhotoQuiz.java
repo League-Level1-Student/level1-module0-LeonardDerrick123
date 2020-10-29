@@ -36,17 +36,22 @@ quizWindow.add(var);
 		// 5. call the pack() method on the quiz window
 quizWindow.pack();
 		// 6. ask a question that relates to the image
-JOptionPane.showInputDialog(null,"What meme is this from");
+
+String Answer = JOptionPane.showInputDialog(null,"What meme is this from");
 		// 7. print "CORRECT" if the user gave the right answer
+if(Answer.equalsIgnoreCase ("Spooky Time")){ System.out.println("Correct");
 
+}
 		// 8. print "INCORRECT" if the answer is wrong
+else {System.out.println("INCORRECT");
 
+}
 		// 9. remove the component from the quiz window (you may not see the
 		// effect of this until step 12)
-
+quizWindow.remove(var);
 		// 10. find another image and create it (might take more than one line
 		// of code)
-
+String Image2 = "https://pics.me.me/right-button-left-button-0-a-guy-that-is-sweating-39006702.png";
 		// 11. add the second image to the quiz window
 
 		// 12. pack the quiz window
