@@ -52,15 +52,27 @@ quizWindow.remove(var);
 		// 10. find another image and create it (might take more than one line
 		// of code)
 String Image2 = "https://pics.me.me/right-button-left-button-0-a-guy-that-is-sweating-39006702.png";
-		// 11. add the second image to the quiz window
+		Component v1i;
+		v1i = createImage(Image2);
+		
+quizWindow.add(v1i);
+		
+quizWindow.pack();
+// 11. add the second image to the quiz window
 
 		// 12. pack the quiz window
 
 		// 13. ask another question
-
+String V23 = JOptionPane.showInputDialog("which button do you choose");
 		// 14+ check answer, say if correct or incorrect, etc.
-
-	}
+if (V23.equalsIgnoreCase("Red Button")) {
+	System.out.println("Correct");
+}
+else {
+	JOptionPane.showMessageDialog(null,"https://i.imgflip.com/1bbujr.gif");
+}}
+	
+	
 
 	private Component createImage(String imageUrl) throws MalformedURLException {
 		URL url = new URL(imageUrl);
