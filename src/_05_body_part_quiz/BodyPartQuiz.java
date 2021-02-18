@@ -59,7 +59,7 @@ int score = 0;
 
 		// 5. Check their answer. If they guessed correctly:
 		// -- Tell them they are right and increase the score by 1
-if (guess.equals("Arnald")) {
+if (guess.equals("Arnold Schwarzenegger")) {
 JOptionPane.showMessageDialog(null, "Correct");
 score ++;
 }
@@ -72,9 +72,35 @@ else {
 		showNextImage();
 
 		// 8. .... repeat 4-7 for all your images.....
-
+		String giess = JOptionPane.showInputDialog("who is this?");
+		if (giess.equals("Leonardo DiCaprio")) {
+			JOptionPane.showMessageDialog(null, "Correct");
+			score ++;
+			}
+		else {
+			JOptionPane.showMessageDialog(null,"Wrong");
+		}
+		showNextImage();
+		String gdess = JOptionPane.showInputDialog("who is this?");
+		if (gdess.equals("Morgan Freeman")) {
+			JOptionPane.showMessageDialog(null, "Correct");
+			score ++;
+			}
+		else {
+			JOptionPane.showMessageDialog(null,"Wrong");
+		}
+		showNextImage();
+		String ggess = JOptionPane.showInputDialog("who is this?");
+		if (ggess.equals("Jack Black")) {
+			JOptionPane.showMessageDialog(null, "Correct");
+			score ++;
+			}
+		else {
+			JOptionPane.showMessageDialog(null,"Wrong");
+		}
+		showNextImage();
 		// 9. Show them their current score
-
+System.out.print\\kj\\\ln(score);
 	}
 
 	public void showNextImage() {
