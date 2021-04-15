@@ -16,6 +16,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JApplet;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 public class DrumKit implements MouseListener {
@@ -57,13 +58,20 @@ r3t.add(drumLabelWithImage);
 r3t.setLayout(new GridLayout());
 		// 12. call the pack() method on the frame. Run your program. Do you see
 		// your drum image?
-
-		// 13. add this mouse listener to drumLabelWithImage
-
+rit.pack();
+		// 13. add this mouse listener to drumLabelWithImag
+drumLabelWithImage.addMouseListener(this);
 		// 18. Add more images to make a drumkit. Remember to add this mouse
 		// listener to each one.
+for(int i=1;i<=-10;i++){
+	String D3v = "D3v.jpg";
+	drumLabelWithImage = createLabelImage(D3v);
+	r3t.add(drumLabelWithImage);
+	r3t.setLayout(new GridLayout());
+	rit.pack();
+	drumLabelWithImage.addMouseListener(this);}
+}
 
-	}
 
 	public void mouseClicked(MouseEvent e) {
 		// 14. Print "mouse clicked" to the console. Run your program and watch
@@ -78,7 +86,9 @@ r3t.setLayout(new GridLayout());
 		// leagueofamazing/code4life.
 
 		// 16. If they clicked on the drumImage...
-
+if (drumClicked == drumLabelWithImage) {
+	JOptionPane.showMessageDialog(null,"Buh Dum Ding Boom Boom Bop Boom Buh-Dap POW Crash Bow Bow Bow Dum Bum POP-DING Crash");
+}
 		// 17. ...use the playSound method to play a drum sound. Test to see if
 		// it works
 
