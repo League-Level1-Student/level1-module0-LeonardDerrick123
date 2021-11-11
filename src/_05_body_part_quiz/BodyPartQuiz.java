@@ -100,7 +100,7 @@ else {
 		}
 		showNextImage();
 		// 9. Show them their current score
-System.out.print\\kj\\\ln(score);
+System.out.println(score);
 	}
 
 	public void showNextImage() {
